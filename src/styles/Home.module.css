@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 5rem;
 }
 
 .main {
@@ -126,4 +126,16 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+.dogs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+}
+.dogGroup {
+  background: #888888;
+  padding: 10px;
+  border-radius: 8px;
 }
