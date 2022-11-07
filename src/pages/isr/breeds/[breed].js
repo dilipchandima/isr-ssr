@@ -32,7 +32,10 @@ export async function getStaticProps({ params: { breed } }) {
     return { notFound: true };
   }
 
-  return { props: { data: data.message } };
+  return {
+    props: { data: data.message },
+    revalidate: 10,
+  };
 }
 
 export async function getStaticPaths() {
